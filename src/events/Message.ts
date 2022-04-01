@@ -21,10 +21,7 @@ export default class Message implements BotEvent {
 
     if (!cmd) return;
     if (!cmd.canRun(message.author, message)) return;
-    if (!cmd.hasChannelPermission(message)) {
-      console.log('Missing Channel Permissions');
-      return;
-    }
+    if (!cmd.hasChannelPermissions(message)) return
 
     await cmd.run(message, argus);
 
