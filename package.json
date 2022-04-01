@@ -1,0 +1,45 @@
+{
+  "name": "module-discord-toolbox",
+  "version": "1.0.0",
+  "description": "A Discord bot showcasing the usage of modules API",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsc && node dist/src/index.js",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prettier-watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
+    "fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modulenft/module-discord-toolbox.git"
+  },
+  "author": "Module",
+  "bugs": {
+    "url": "https://github.com/modulenft/module-discord-toolbox/issues"
+  },
+  "homepage": "https://github.com/modulenft/module-discord-toolbox",
+  "dependencies": {
+    "@types/node-fetch": "2",
+    "discord.js": "^12.3.1",
+    "dotenv": "^16.0.0",
+    "eslint-plugin-jest": "^26.1.3",
+    "jest": "^27.5.1",
+    "node-fetch": "2",
+    "onchange": "^7.1.0",
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.8.0",
+    "typescript": "^3.6.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.7.3",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "prettier": "^2.6.1",
+    "typescript": "^3.6.2"
+  }
+}
