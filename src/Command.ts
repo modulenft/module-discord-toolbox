@@ -57,7 +57,7 @@ export abstract class Command {
    *  @param {message} message that contains granted permissions
    */
    public hasChannelPermissions(message: Message) {
-    let hasPermission;
+    let hasPermission = true;
     this.conf.requiredPermissions.forEach((permission) => {
       if (!message.guild?.me?.hasPermission(permission)) hasPermission = false;
     });
