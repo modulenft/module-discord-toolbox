@@ -57,7 +57,7 @@ export abstract class Command {
    *  @param {message} message that contains granted permissions
    */
    public hasChannelPermissions(message: Message) {
-    return nessage?.guild?.me?.permissionsIn(message.channel).has('SEND_MESSAGES');
+    return message?.guild?.me?.permissionsIn(message.channel).has('SEND_MESSAGES');
    }
 
   /**
